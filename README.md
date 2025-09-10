@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# SageMaker-Demo
-=======
 # SageMakerDemoNote
 > 本篇筆記主要為紀錄在 SageMaker 上訓練模型與建立環境時遇過的問題
 
@@ -47,7 +44,7 @@ Invalid or expired auth token. This could be due to third party cookies being di
 <br>
 <br>
 
-`左側 git 圖示 > Clone a Repository > https://github.com/45678XYZ/SageMakerDemo > Clone`
+`左側 git 圖示 > Clone a Repository > https://github.com/45678XYZ/SageMaker-Demo > Clone`
 
 <img width="1440" height="900" alt="截圖 2025-09-10 晚上11 49 03" src="https://github.com/user-attachments/assets/b25f69d8-9d54-4127-941d-cc0b3b96cc94" />
 
@@ -56,7 +53,7 @@ Invalid or expired auth token. This could be due to third party cookies being di
 
 載入完畢即可執行 Notebook
 
-<img width="1440" height="900" alt="截圖 2025-09-11 凌晨12 13 16" src="https://github.com/user-attachments/assets/1ee0a42f-3fa7-4f5b-8b34-7dc825d6bbe6" />
+<img width="1440" height="900" alt="截圖 2025-09-11 凌晨1 22 45" src="https://github.com/user-attachments/assets/def2b5bc-8c10-4e4c-b8dd-09c5f0b22cec" />
 
 <br>
 <br>
@@ -113,8 +110,3 @@ account-level service limit 'ml.p3.2xlarge for training job usage' is 0 Instance
 > 在 `SageMaker Unified Studio > space > configure space` 那邊設置的 instance 是用來執行環境的，不需要太強（預設即可）
 >
 > 而要用到其他比較強的 instance 則是在 code 裡呼叫的用來跑模型的 instance
-
-
-
-
->>>>>>> 793c792 (Initial project upload)
