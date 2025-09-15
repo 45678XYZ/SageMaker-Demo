@@ -4,9 +4,8 @@
 ### 建立VPC
 需要取得外部連線的資源，因此必須建立一個有 NAT 閘道子網路的 VPC（付費）
 
-<img width="1440" height="900" alt="截圖 2025-09-10 晚上10 15 34" src="https://github.com/user-attachments/assets/35a56b8a-a11a-43c9-a9a4-399dbed6ca35" />
-<img width="1440" height="900" alt="截圖 2025-09-10 晚上10 16 04" src="https://github.com/user-attachments/assets/97fcb1f5-ab0c-48c7-a3df-924aca46c721" />
-
+<img width="1440" height="846" alt="487932037-35a56b8a-a11a-43c9-a9a4-399dbed6ca35" src="https://github.com/user-attachments/assets/9e493ef1-8f95-41b4-995f-8655354906e0" />
+<img width="1439" height="847" alt="487932068-97fcb1f5-ab0c-48c7-a3df-924aca46c721" src="https://github.com/user-attachments/assets/556154c3-3dfe-488f-b965-27afa93666f0" />
 
 <br>
 <br>
@@ -14,7 +13,7 @@
 ### 建立網域
 大部分都可照預設，但要記得選取有 NAT 閘道的 **private** 子網路（若連接到 public 可能會無法載入資料）
 
-<img width="1440" height="900" alt="截圖 2025-09-10 晚上10 23 39" src="https://github.com/user-attachments/assets/2d7106b3-d1be-45e7-bc1e-7a6410fc0a3f" />
+<img width="1440" height="847" alt="487932124-2d7106b3-d1be-45e7-bc1e-7a6410fc0a3f" src="https://github.com/user-attachments/assets/1d8428f9-2007-4754-be3c-6c4b8c8e07cd" />
 
 <br>
 <br>
@@ -82,9 +81,8 @@ arrow" because no identity-based policy allows the s3:PutObject action
 
 `IAM > 角色 > 要新增權限的 role > 新增許可 > 連接政策`
 
-<img width="1464" height="928" alt="截圖 2025-09-10 晚上10 33 02" src="https://github.com/user-attachments/assets/cd525f7a-49fb-4b23-8291-81d88959aa4f" />
-<img width="1440" height="900" alt="截圖 2025-09-10 晚上10 34 17" src="https://github.com/user-attachments/assets/f3c9ac13-5630-48f0-8f78-1765b1274489" />
-
+<img width="1440" height="875" alt="487932726-cd525f7a-49fb-4b23-8291-81d88959aa4f" src="https://github.com/user-attachments/assets/75ea7024-363d-410b-83ff-7fc88bfebe50" />
+<img width="1440" height="847" alt="487932761-f3c9ac13-5630-48f0-8f78-1765b1274489" src="https://github.com/user-attachments/assets/9ab41b5e-61d2-4325-9112-cb02dc237405" />
 
 <br>
 <br>
@@ -98,14 +96,15 @@ account-level service limit 'ml.p3.2xlarge for training job usage' is 0 Instance
 **解決方法：**
 `Amazon Service Quotas > 左側 AWS 服務 > 搜尋 SageMaker`
 
-<img width="1440" height="900" alt="截圖 2025-09-10 晚上10 45 30" src="https://github.com/user-attachments/assets/08422a63-d833-4cfc-93a8-c2c3a4e75477" />
+<img width="1438" height="846" alt="487932912-08422a63-d833-4cfc-93a8-c2c3a4e75477" src="https://github.com/user-attachments/assets/00cf3982-452a-4ece-ab91-b5ba6ba31a9f" />
+
 
 <br>
 <br>
 
 點選後再搜尋要用的 instance 名稱 + "for training job usage"，可以從右上角請求增加層級
 
-<img width="1464" height="928" alt="截圖 2025-09-05 下午2 45 12" src="https://github.com/user-attachments/assets/6aebd9dc-7750-476d-b04c-bc70e3d8ccd3" />
+<img width="1464" height="874" alt="487932978-6aebd9dc-7750-476d-b04c-bc70e3d8ccd3" src="https://github.com/user-attachments/assets/cb2d882c-bfaf-45c2-8de2-76adec1bf34a" />
 
 
 > [!NOTE]
