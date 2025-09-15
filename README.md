@@ -13,7 +13,7 @@
 ### 建立網域
 大部分都可照預設，但要記得選取有 NAT 閘道的 **private** 子網路（若連接到 public 可能會無法載入資料）
 
-<img width="1440" height="847" alt="487932124-2d7106b3-d1be-45e7-bc1e-7a6410fc0a3f" src="https://github.com/user-attachments/assets/1d8428f9-2007-4754-be3c-6c4b8c8e07cd" />
+<img width="1440" height="847" alt="489632526-1d8428f9-2007-4754-be3c-6c4b8c8e07cd" src="https://github.com/user-attachments/assets/8a90079f-cd8d-4752-856c-0a1d29d088ac" />
 
 <br>
 <br>
@@ -39,7 +39,7 @@ Invalid or expired auth token. This could be due to third party cookies being di
 
 `新建立的 project > New > Notebook`
 
-<img width="1440" height="900" alt="截圖 2025-09-10 晚上11 49 37" src="https://github.com/user-attachments/assets/a898681e-50f9-4fb0-8daa-6384af2ac8df" />
+<img width="1440" height="808" alt="487932337-a898681e-50f9-4fb0-8daa-6384af2ac8df" src="https://github.com/user-attachments/assets/cddb5102-386c-4d7e-a1d8-5ff52ad83e12" />
 
 <br>
 <br>
@@ -62,17 +62,13 @@ Invalid or expired auth token. This could be due to third party cookies being di
 部分功能需要額外開啟權限
 
 **錯誤訊息：**
-ClientError: An error occurred (AccessDenied) when calling the CreateMultipartUpload operation: User: 
-arn:aws:sts::029448392342:assumed-role/datazone_usr_role_4ysmzknfyhv547_b0z6p40qutfk13/SageMaker is not authorized 
-to perform: s3:PutObject on resource: 
-"arn:aws:s3:::amazon-sagemaker-029448392342-us-east-1-64d07b55dc34/samples/datasets/imdb/train/data-00000-of-00001.
-arrow" because no identity-based policy allows the s3:PutObject action
+ClientError: An error occurred (AccessDenied) when calling the CreateMultipartUpload operation: User: \<UserName\> is not authorized to perform: s3:PutObject on resource: \<ResourceName\> because no identity-based policy allows the s3:PutObject action
 
 
 **解決方法：**
 在 Studio 找到該 Project 的 role ARN
 
-<img width="1440" height="900" alt="截圖 2025-09-10 晚上10 30 06" src="https://github.com/user-attachments/assets/1828237f-af64-47f8-9701-e5bc07cb44f8" />
+<img width="1440" height="823" alt="487932594-1828237f-af64-47f8-9701-e5bc07cb44f8-2" src="https://github.com/user-attachments/assets/d0ea839c-a465-4d41-a824-fd146ecad797" />
 
 <br>
 <br>
@@ -81,7 +77,7 @@ arrow" because no identity-based policy allows the s3:PutObject action
 
 `IAM > 角色 > 要新增權限的 role > 新增許可 > 連接政策`
 
-<img width="1440" height="875" alt="487932726-cd525f7a-49fb-4b23-8291-81d88959aa4f" src="https://github.com/user-attachments/assets/75ea7024-363d-410b-83ff-7fc88bfebe50" />
+<img width="1440" height="875" alt="489634412-75ea7024-363d-410b-83ff-7fc88bfebe50" src="https://github.com/user-attachments/assets/445921d4-c84e-45d3-81af-d835ac4cee0e" />
 <img width="1440" height="847" alt="487932761-f3c9ac13-5630-48f0-8f78-1765b1274489" src="https://github.com/user-attachments/assets/9ab41b5e-61d2-4325-9112-cb02dc237405" />
 
 <br>
